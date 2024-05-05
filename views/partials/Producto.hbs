@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col text-center">
+      <h1>Mercadito V 0.1 beta</h1>
+      <p>Actualmente los productos que poseemos son :
+          {{#each productos}}
+        {{#unless @first}}, {{/unless}}
+        {{this.nombre}}{{#unless @last}} {{else}}.{{/unless}}
+        {{/each}}</p>
+    </div>
+  </div>
+</div>
